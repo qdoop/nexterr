@@ -1,0 +1,35 @@
+{
+    "name": "nexterr",
+    "displayName": "nextError",
+    "description": "nextError VsCode Extension",
+    "version": "0.16.50919",
+    "publisher": "qdoop",
+    "icon": "images/qdoop.png",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/qdoop/nexterr.git"
+    },
+    "activationEvents": [
+        "onCommand:extension.nextError",
+        "workspaceContains:.next"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.nextError",
+            "title": "nextError"
+        }]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^0.11.0"
+    }
+}
