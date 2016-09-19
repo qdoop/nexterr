@@ -39,10 +39,15 @@ function activate(context) {
     // The commandId parameter must match the command field in package.json
     var disposable = vscode.commands.registerCommand('extension.nextError', function () {
         // The code you place here will be executed every time your command is executed
+        if(!fs.existsSync(ws.rootPath + '/_next.json'))
+        {
+             fs.writeFileSync(ws.rootPath + '/_next.json','{}');
+        }
+
         if(fs.existsSync(ws.rootPath + '/.next')) return;
 
         fs.mkdirSync(ws.rootPath + '/.next');
-        fs.writeFileSync(ws.rootPath + '/.next/build.cmd','#this is your build shell script executed at top level folder.')
+        fs.writeFileSync(ws.rootPath + '/.next/build.cmd','#this is your build shell script executed at top level folder.');
         // Display a message box to the user
         vscode.window.showInformationMessage('nextError extension loaded! Check inside .next folder');
     });

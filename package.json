@@ -2,7 +2,7 @@
     "name": "nexterr",
     "displayName": "nextError",
     "description": "nextError VsCode Extension",
-    "version": "0.16.50919",
+    "version": "0.16.50920",
     "publisher": "qdoop",
     "icon": "images/qdoop.png",
     "engines": {
@@ -17,7 +17,7 @@
     },
     "activationEvents": [
         "onCommand:extension.nextError",
-        "workspaceContains:.next"
+        "workspaceContains:_next.json"
     ],
     "main": "./extension",
     "contributes": {
