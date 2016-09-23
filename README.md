@@ -42,11 +42,11 @@ When ever you save a file the extension executes your custom build script and st
 
 if an output line matches an error/warning line pattern source code location and textual information are extracted.
 
-Uppon scripts completion the collected information are sequentially presented to the user.
+Uppon script's completion the collected information are sequentially presented to the user.
 
 For each build error/warning the editor switches to the corresponding source code location, highlights it and a MessageBox describes the problem.
 
-The user may fix this error or just move to the next one by clossing the MessageBox.
+The user may fix this error or just move to the next one by closing the MessageBox.
 
 
 ## Requirements
@@ -59,13 +59,17 @@ TBD
 
 ## Release Notes
 
-### 0.16.50919
+### 0.16.50923
 
-_160919_ Initial release of nexterr
+_160923_ Fixed typos
 
 ### 0.16.50920
 
 _160920_ Fixed self activation isssue
+
+### 0.16.50919
+
+_160919_ Initial release of nexterr
 
 
 -----------------------------------------------------------------------------------------------------------

@@ -1,8 +1,8 @@
 {
     "name": "nexterr",
     "displayName": "nextError",
-    "description": "nextError VsCode Extension",
-    "version": "0.16.50920",
+    "description": "Automate and speed up your daily Build and GotoErrorLine development cycle",
+    "version": "0.16.50923",
     "publisher": "qdoop",
     "icon": "images/qdoop.png",
     "engines": {
